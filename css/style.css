@@ -235,6 +235,15 @@ p {
   font-size: 1.25em;
   border-bottom: 1px dotted #FCC8DA;
   line-height: 2;
+  align-content: center;
+}
+
+.content .main-content ul li img {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  width: 150px;
 }
 
 .content .main-content h1 {
@@ -253,6 +262,7 @@ p {
 }
 
 .content .main-content ul li .date {
+  padding-top: 25px;
   float: right;
   color: #CCC;
 }

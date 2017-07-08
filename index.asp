@@ -24,7 +24,7 @@
           <img class="second-slide" src="img/slide2.jpg" alt="Second slide">
         </div>
         <div class="item">
-          <img class="third-slide" src="img/slide3.jpg" alt="Third slide">
+          <a href="activity.asp"><img class="third-slide" src="img/slide3.jpg" alt="Third slide"></a>
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">

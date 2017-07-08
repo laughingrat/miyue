@@ -13,7 +13,7 @@
         	<div class="col-xs-12 col-sm-12 col-md-3">
             <div class="row qr-code">
               <div class="col-xs-12 col-sm-12 col-md-6">
-                <img class="img-responsive" src="img/qr-code.png" alt="关注公众号" border="0" />
+                <img class="img-responsive" src="qrcode.jpg" alt="关注公众号" border="0" />
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6">
                 扫描二维码关注微信公众号“谧月月子中心”
