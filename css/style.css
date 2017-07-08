@@ -262,6 +262,11 @@ p {
 }
 
 .content .main-content ul li .date {
+  float: right;
+  color: #CCC;
+}
+
+.content .main-content ul li .activitydate {
   padding-top: 25px;
   float: right;
   color: #CCC;

@@ -30,14 +30,14 @@
                   <img src="http://p1.meituan.net/dpdeal/423058736524373998bf366459a6264c145995.jpg@460w_280h_1e_1c">
                   仅售1元，价值88元精致月子餐试吃，节假日通用！
                 </a>
-                <span class="date">2017/6/30</span>
+                <span class="activitydate">2017/6/30</span>
               </li>
             	<li>
                 <a href="http://xa.meituan.com/deal/45523290.html" target="_blank">
                   <img src="http://p1.meituan.net/dpdeal/4c3db8d73277c6a086902ca9f31f0ed328727.jpg@460w_280h_1e_1c">
                   仅售9999元，价值24800元黄金月子期15天，节假日通用！
                 </a>
-                <span class="date">2017/6/30</span>
+                <span class="activitydate">2017/6/30</span>
               </li>
             </ul>
         	</div>

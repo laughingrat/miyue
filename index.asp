@@ -152,7 +152,7 @@
     <!-- Learning -->
     <div class="learning">
       <div class="container">
-        <h2 class="learning-title">谧月妈妈学堂</h2>
+        <h2 class="learning-title">月子问答</h2>
         <div class="row news">
         	<div class="col-xs-4 col-sm-3 col-md-3">
             <a href="#"><img class="img-responsive" src="img/news-img-1.jpg" alt="" border="0" /></a>
@@ -184,7 +184,7 @@
         </div>
 
         <div class="row text-center">
-          <a href="#" class="btn btn-primary" role="button">更多文章</a>
+          <a href="articles.asp" class="btn btn-primary" role="button">更多文章</a>
         </div>
       </div>
     </div>

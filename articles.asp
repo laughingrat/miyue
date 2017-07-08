@@ -14,6 +14,7 @@
 
 
     <!-- Content -->
+    <!--#include file="_articles.asp"-->
     <div class="content">
       <div class="container">
         <div class="row">
@@ -25,19 +26,35 @@
         	</div>
         	<div class="col-xs-12 col-sm-8 col-md-9 main-content">
             <ul>
-            	<li>
-                <a href="http://xa.meituan.com/deal/45522962.html" target="_blank">
-                  <img src="http://p1.meituan.net/dpdeal/423058736524373998bf366459a6264c145995.jpg@460w_280h_1e_1c">
-                  仅售1元，价值88元精致月子餐试吃，节假日通用！
+              <%
+                dim i, len, content, arr, index, date, title, desc
+                len = LEN(articles)
+                response.write(len)
+                response.end
+                for i = len - 1 to 0 step -1
+                  content = articles(i)
+                  arr = split(content, "|")
+                  index = arr(0)
+                  date = arr(1)
+                  title = arr(2)
+                  desc = arr(3)
+              %>
+              <li>
+                <a href="article<%= index%>.asp">
+                  <% = title %>
                 </a>
-                <span class="date">2017/6/30</span>
+                <span class="date"><%= date%></span>
               </li>
+              <%
+                next
+              %>
+
+
             	<li>
-                <a href="http://xa.meituan.com/deal/45523290.html" target="_blank">
-                  <img src="http://p1.meituan.net/dpdeal/4c3db8d73277c6a086902ca9f31f0ed328727.jpg@460w_280h_1e_1c">
-                  仅售9999元，价值24800元黄金月子期15天，节假日通用！
+                <a href="article002.asp">
+                  坐月子是否需要完全卧床
                 </a>
-                <span class="date">2017/6/30</span>
+                <span class="date">2017/7/8</span>
               </li>
             </ul>
         	</div>
