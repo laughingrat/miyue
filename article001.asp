@@ -25,7 +25,7 @@
     <div class="container">
       <div class="main-content">
         <h1>雾霾危害大，孕妇六招巧防雾霾~</h1>
-        <h6>作者：管理员 ｜ 发布日期：2017.7.8</h6>
+        <h6>作者：管理员 ｜ 发布日期：2017.7.1</h6>
 
 
         <div class="act_xq_div">

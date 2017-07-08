@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img class="img-responsive" src="img/logo.png" alt="谧月产后母婴管理中心" border="0" /></a>
+          <a class="navbar-brand" href="index.asp"><img class="img-responsive" src="img/logo.png" alt="谧月产后母婴管理中心" border="0" /></a>
         </div>
       </div>
 

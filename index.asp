@@ -1,3 +1,4 @@
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -150,38 +151,33 @@
     </div>
 
     <!-- Learning -->
+    <!--#include file="_articles.asp"-->
     <div class="learning">
       <div class="container">
         <h2 class="learning-title">月子问答</h2>
+        <%
+          dim i, len, content, arr, index, date, title, description
+          len = UBOUND(articles)
+          for i = len to len - 2 step -1
+            content = articles(i)
+            arr = split(content, "|")
+            index = arr(0)
+            date = arr(1)
+            title = arr(2)
+            description = arr(3)
+        %>
         <div class="row news">
         	<div class="col-xs-4 col-sm-3 col-md-3">
-            <a href="#"><img class="img-responsive" src="img/news-img-1.jpg" alt="" border="0" /></a>
+            <a href="article<%= index%>.asp"><img class="img-responsive" src="img/news-img-<%= index%>.jpg" alt="" border="0" /></a>
         	</div>
         	<div class="col-xs-8 col-sm-9 col-md-9">
-            <a href="#"><h4>月子期如何预防产后抑郁症？</h4></a>
-            <p>保持心情愉快，多发现生活中美好、有趣的事物。另外，跟小孩一起睡眠是重点，很多妈妈就是不适应新的睡眠习惯。新生儿一天睡眠的睡眠时间基本上在二十小时以上，但并不是一直睡，而是睡一两个小时就醒来哭闹一下，要吃东西，要排便。慢慢把睡眠调整好，心情估计也会逐渐好起来。</p>
+            <a href="article<%= index%>.asp"><h4><%= title%></h4></a>
+            <p><%= description%></p>
         	</div>
         </div>
-
-        <div class="row news">
-        	<div class="col-xs-4 col-sm-3 col-md-3">
-            <a href="#"><img class="img-responsive" src="img/news-img-2.jpg" alt="" border="0" /></a>
-        	</div>
-        	<div class="col-xs-8 col-sm-9 col-md-9">
-            <a href="#"><h4>孕妈咪吃素会影响胎宝宝健康吗？</h4></a>
-            <p>在你的朋友圈，你知道身边朋友饮食习惯都是怎样的吗? 也许你的朋友是肉食主义者，或者是素食主义者。但是，你知道吗？素食已成为当今世界上一股强劲的潮流！</p>
-        	</div>
-        </div>
-
-        <div class="row news">
-        	<div class="col-xs-4 col-sm-3 col-md-3">
-            <a href="#"><img class="img-responsive" src="img/news-img-3.jpg" alt="" border="0" /></a>
-        	</div>
-        	<div class="col-xs-8 col-sm-9 col-md-9">
-            <a href="#"><h4>素月子该怎么吃才好？如何合理补充营养？</h4></a>
-            <p>“素”月子该吃什么？素食妈妈们不仅要恢复健康，还要有足够的奶喂宝宝, 对一位个连蛋、奶也不吃的女人来说，实在是伤透脑筋。在我们身边，朋友圈中有不少素食妈妈，为此，我们准备了几种素食者坐月子食谱推荐给素食妈妈们，让您在月子里也吃得很丰盛哦！</p>
-        	</div>
-        </div>
+        <%
+          Next
+        %>
 
         <div class="row text-center">
           <a href="articles.asp" class="btn btn-primary" role="button">更多文章</a>

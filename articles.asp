@@ -1,3 +1,4 @@
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -27,17 +28,15 @@
         	<div class="col-xs-12 col-sm-8 col-md-9 main-content">
             <ul>
               <%
-                dim i, len, content, arr, index, date, title, desc
-                len = LEN(articles)
-                response.write(len)
-                response.end
-                for i = len - 1 to 0 step -1
+                dim i, len, content, arr, index, date, title, description
+                len = UBOUND(articles)
+                for i = len to 0 step -1
                   content = articles(i)
                   arr = split(content, "|")
                   index = arr(0)
                   date = arr(1)
                   title = arr(2)
-                  desc = arr(3)
+                  description = arr(3)
               %>
               <li>
                 <a href="article<%= index%>.asp">
@@ -48,14 +47,6 @@
               <%
                 next
               %>
-
-
-            	<li>
-                <a href="article002.asp">
-                  坐月子是否需要完全卧床
-                </a>
-                <span class="date">2017/7/8</span>
-              </li>
             </ul>
         	</div>
         </div>
