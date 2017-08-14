@@ -65,7 +65,7 @@
 
             //创建小狐狸
             var pt = new BMap.Point(108.947967, 34.2242);
-            var myIcon = new BMap.Icon("http://www.xianmiyue.com/new/favicon-32x32.png", new BMap.Size(32, 32));
+            var myIcon = new BMap.Icon("http://www.xianmiyue.com/favicon-32x32.png", new BMap.Size(32, 32));
             var marker2 = new BMap.Marker(pt, {
               icon: myIcon
             }); // 创建标注
